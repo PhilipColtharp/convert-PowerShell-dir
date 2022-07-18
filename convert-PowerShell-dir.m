@@ -1,6 +1,6 @@
 let
     Source = Table.FromColumns(
-      {Lines.FromBinary(File.Contents("C:\Users\plc320\OneDrive - Hanover Insurance\Desktop\Clay Monthly\ClayDir.txt"), null, null, 1252)},
+      {Lines.FromBinary(File.Contents("dir file.txt"), null, null, 1252)},
       {"txt"}
       ),
     #"Filtered Rows" = Table.SelectRows(#"Source",
