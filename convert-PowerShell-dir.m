@@ -1,3 +1,7 @@
+// PowerShell command:
+//     cd "To the folder to start at"
+//     Get-ChildItem "whatever*wildcard" -Force -Recurse  | Format-Table -AutoSize | Out-File A:\OutputHere.txt -width 300
+
 let
     Source = Table.FromColumns(
       {Lines.FromBinary(File.Contents("dir file.txt"), null, null, 1252)},
